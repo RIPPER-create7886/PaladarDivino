@@ -1,0 +1,157 @@
+<?php include 'header.php'; ?>
+
+<div class="container mt-4 mb-5">
+    <div class="text-center">
+        <h1 class="display-5 fw-bold" style="color: #c04e01;">Menú Los Huastecos</h1>
+        <p class="text-muted lead">Tradición Potosina</p>
+    </div>
+
+    <div class="categoria-header">⭐ Especialidades Potosinas</div>
+    <div class="row">
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1541544744-cc6110e099c8?w=600" 
+                     class="card-img-top" 
+                     alt="Huastecada"
+                     onerror="this.src='https://placehold.co/600x400/c04e01/white?text=Huastecada'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">La Huastecada</h5>
+                    <p class="card-text text-muted small">El plato más completo: Cecina, enchiladas, zacahuil, bocoles y chorizo.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$275</span>
+                        <button class="btn btn-outline-success rounded-pill" onclick="agregar('Huastecada', 275)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Zacahuil.jpg/640px-Zacahuil.jpg" 
+                     class="card-img-top" 
+                     alt="Zacahuil"
+                     onerror="this.src='https://placehold.co/600x400/orange/white?text=Zacahuil'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">Zacahuil Potosino</h5>
+                    <p class="card-text text-muted small">Tamal gigante cocido en horno de leña (Porción).</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$95</span>
+                        <button class="btn btn-outline-success rounded-pill" onclick="agregar('Zacahuil', 95)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Enchiladas_potosinas.jpg/640px-Enchiladas_potosinas.jpg" 
+                     class="card-img-top" 
+                     alt="Enchiladas"
+                     onerror="this.src='https://placehold.co/600x400/red/white?text=Enchiladas'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">Enchiladas Potosinas</h5>
+                    <p class="card-text text-muted small">Masa enchilada con queso y frijoles.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$140</span>
+                        <button class="btn btn-outline-success rounded-pill" onclick="agregar('Enchiladas', 140)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria-header">🔥 Antojitos Huastecos</div>
+    <div class="row">
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bocoles.jpg/640px-Bocoles.jpg" 
+                     class="card-img-top" 
+                     alt="Bocoles"
+                     onerror="this.src='https://placehold.co/600x400/green/white?text=Bocoles'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">Orden de Bocoles</h5>
+                    <p class="card-text text-muted small">Gorditas de masa con manteca, rellenas de guisos.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$120</span>
+                        <button class="btn btn-outline-danger rounded-pill" onclick="agregar('Bocoles', 120)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cecina_de_Yecapixtla.jpg/640px-Cecina_de_Yecapixtla.jpg" 
+                     class="card-img-top" 
+                     alt="Cecina"
+                     onerror="this.src='https://placehold.co/600x400/brown/white?text=Cecina'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">Cecina Huasteca</h5>
+                    <p class="card-text text-muted small">Carne marinada en naranja agria con guarniciones.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$199</span>
+                        <button class="btn btn-outline-danger rounded-pill" onclick="agregar('Cecina', 199)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1565060169194-196e95a943a9?w=600" 
+                     class="card-img-top" 
+                     alt="Queso"
+                     onerror="this.src='https://placehold.co/600x400/yellow/black?text=Queso+Fundido'">
+                <div class="card-body">
+                    <h5 class="titulo-plato">Queso Fundido</h5>
+                    <p class="card-text text-muted small">Con chorizo y tortillas de harina recién hechas.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="precio">$107</span>
+                        <button class="btn btn-outline-danger rounded-pill" onclick="agregar('Queso', 107)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-4 border-success shadow">
+        <div class="card-header bg-success text-white fw-bold">🛒 Tu Comanda</div>
+        <div class="card-body bg-light">
+            <form onsubmit="finalizarPedido(event)">
+                <div class="mb-2">
+                    <label class="fw-bold">Detalle:</label>
+                    <textarea id="listaPedido" class="form-control" rows="3" readonly style="background: white;"></textarea>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="text-success">Total: $<span id="totalPrecio">0</span></h3>
+                    <button class="btn btn-success fw-bold px-4">ENVIAR A COCINA</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    let total = 0;
+    let items = [];
+
+    function agregar(nombre, precio) {
+        items.push(nombre + " ($" + precio + ")");
+        total += precio;
+        document.getElementById('listaPedido').value = items.join("\n");
+        document.getElementById('totalPrecio').innerText = total;
+    }
+
+    function finalizarPedido(e) {
+        e.preventDefault();
+        alert("¡Pedido Enviado a Cocina!\nTotal: $" + total);
+        // Reiniciar
+        total = 0; items = [];
+        document.getElementById('listaPedido').value = "";
+        document.getElementById('totalPrecio').innerText = "0";
+    }
+</script>
+
+<?php include 'footer.php'; ?>
