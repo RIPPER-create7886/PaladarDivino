@@ -1,0 +1,61 @@
+<?php include 'header.php'; ?>
+
+<div class="container mt-4">
+    <h1 class="text-center text-primary mb-4">Contacto y Soporte</h1>
+
+    <div class="row">
+        <div class="col-md-5 mb-4">
+            <div class="card bg-light h-100 border-0 shadow-sm p-4">
+                <h3><i class="bi bi-geo-alt-fill"></i> Ubicación</h3>
+                <p>San Luis Potosí, SLP. (Zona Huasteca)</p>
+                
+                <h3 class="mt-4"><i class="bi bi-envelope-at-fill"></i> Correo Oficial</h3>
+                <p class="fs-5"><a href="mailto:ruddyrdzf@hotmail.com">ruddyrdzf@hotmail.com</a></p>
+                
+                <h3 class="mt-4"><i class="bi bi-clock-fill"></i> Horario</h3>
+                <p>Lunes a Domingo: 8:00 AM - 10:00 PM</p>
+                
+                <div class="mt-4">
+                    <h5>Síguenos:</h5>
+                    <a href="https://www.facebook.com/LosHuastecosSLP/?locale=es_LA" target="_blank" class="btn btn-primary btn-sm"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/loshuastecoslp/" target="_blank" class="btn btn-danger btn-sm"><i class="bi bi-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card shadow-sm p-4">
+                <h3>Envíanos un mensaje</h3>
+                <form action="mailto:ruddyrdzf@hotmail.com" method="post" enctype="text/plain">
+                    <div class="mb-3">
+                        <label class="form-label">Tu Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tu Correo:</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Asunto:</label>
+                        <select class="form-select" name="asunto">
+                            <option>Reservación</option>
+                            <option>Felicitación</option>
+                            <option>Queja</option>
+                            <option>Solicitar Factura</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje:</label>
+                        <textarea class="form-control" rows="4" name="mensaje" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Enviar Correo a Soporte</button>
+                    <small class="text-muted d-block mt-2 text-center">*Esto abrirá tu aplicación de correo predeterminada.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<?php include 'footer.php'; ?>
