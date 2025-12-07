@@ -1,0 +1,105 @@
+/* === ESTILOS GENERALES (LOS HUASTECOS) === */
+:root {
+    --color-terracota: #c04e01; /* Color ladrillo/barro */
+    --color-maiz: #f39c12;      /* Amarillo mostaza */
+    --color-crema: #fdfbf0;     /* Fondo suave */
+    --color-verde: #2d5a27;     /* Verde naturaleza */
+}
+
+body { 
+    padding-top: 90px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-crema);
+}
+
+/* === BARRA DE NAVEGACIÓN === */
+.navbar-custom {
+    background-color: var(--color-terracota) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-bottom: 5px solid var(--color-maiz);
+}
+
+.navbar-brand { 
+    font-weight: 800; 
+    color: #fff !important; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: var(--color-maiz) !important;
+}
+
+/* === TARJETAS DEL MENÚ (EFECTO LEVANTAR) === */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Al pasar el mouse */
+.card:hover {
+    transform: translateY(-10px); /* Se levanta */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* Sombra fuerte */
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Imágenes de comida */
+.card-img-top {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #e0e0e0;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Zoom suave a la foto */
+}
+
+/* === TIPOGRAFÍA DEL MENÚ === */
+.titulo-plato {
+    color: var(--color-terracota);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.precio {
+    color: var(--color-verde);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Títulos de secciones (Especialidades, Antojitos) */
+.categoria-header {
+    background: #e9ecef;
+    padding: 10px 20px;
+    border-left: 6px solid var(--color-terracota);
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* === PIE DE PÁGINA === */
+.footer { 
+    background: #2c2c2c; 
+    color: white; 
+    padding: 40px 0; 
+    margin-top: 60px; 
+    text-align: center;
+    border-top: 5px solid var(--color-terracota);
+}
